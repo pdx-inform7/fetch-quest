@@ -28,9 +28,20 @@ Some Dragon Tree sap is a spell component.
 
 Section 3 - Down The Upstream Path
 
-The Upstream Path is north of the Glade.
+The Upstream Path is north of the Glade. "The path meanders through the forest, sometimes closer, sometimes farther from the stream. You walk along peacefully, mesmerized by its melodic, rhythmic gurgling. A sunny meadow lies west of the path."
+
+A Sunny Meadow is west of the Upstream Path. "The meadow is sunny, but wet and marshy. A dank, musty fragrance hangs in the air, rising from the damp soil. You hesitate to get your boots muddy, but you see a colorful patch further west on the far edge of the meadow. It is a sunny spot dotted by floppy rosettes of leaves adorned with purple flowers."
+
+A Mandrake Patch is west of the sunny meadow. "Mandrakes! So many mandrakes blossoming in the wet, fecund earth. You know that just under the surface, buried within the rich loamy soil is the twisted, gnarly, forked root for which you search."
 
 A Mandrake root is a spell component.
+A Mandrake root is in the mandrake patch.
+
+[
+  Assumes you are starting in the Deepening Glade.
+  Expects you add a mandrake root to your inventory.
+]
+Test mandrake with "n / w / w/ take a mandrake root / i / x mandrake root"
 
 Section 4 - Down The Downstream Path
 
