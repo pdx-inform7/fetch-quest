@@ -1,0 +1,25 @@
+to the side of the path there's a farm
+go to farm, harvest ingredients, work for farmer to get money
+buy ingredients from merchant
+farmer sends us home with food
+guardian has a kitchen?
+guardian is the tree themselves?
+farmer teaches you recipe for pancakes?
+arborist takes care of tree?
+dragon tree is a hot sauce tree?
+
+Enter path:
+  see farm and merchant
+
+Go to merchant:
+  merchant shows wares, asks for money, tells you to go to farm for money.
+
+Go to farm:
+  farmer needs a randomly chosen farm implement from the merchant.
+  farmer gives you money for farm implement.
+  branch:
+    - take money to merchant, buy solution to whole problem
+    - take money to merchant, buy farm implement, bring to farmer, get cooking assignment, cook to solve problem
+
+Go to forest:
+  meet dragon tree guardian, wants pesticide from farmer.
