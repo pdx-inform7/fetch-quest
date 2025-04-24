@@ -18,6 +18,9 @@ Section 1 - Down The Winding Path
 
 The Winding Path is east of the Glade.
 
+[For Section 1's Blob-State Ending - If the Player attempts to eat an unrecognizable Blob.]
+BlobState is a truth state that varies. BlobState is false.
+
 [squish values modeled after beverage heat values in "Disenchantment Bay"]
 
 Squish is a kind of value. The squishes are unmarred, squished, unrecognizable.
@@ -62,6 +65,15 @@ Instead of tasting the wax effigy:
 	if the current squish is not unrecognizable: 
 		now the squish of the wax effigy is the squish after the current squish;
 		say "Oops. It's a little squished."
+		
+[You can't eat the wax effigy if it's unrecognizable (because it wouldn't work for the spell)]
+Check eating the wax effigy:
+	if the squish of the wax effigy is unrecognizable:
+		say "You're not sure it's a good idea to eat a wax effigy of nobody.";
+		now BlobState is true;
+	otherwise:
+		say "The wax squishes between your teeth. Yum.";
+		
 
 Section 2 - Down The Rising Path
 
