@@ -1,0 +1,33 @@
+farmer:
+  needs:
+  - farming implement
+  - breakfast
+  has:
+  - pesticide
+  - money
+
+merchant:
+  needs:
+  - money
+  has:
+  - farming implement
+  - ingredients
+
+tree:
+  needs:
+  - pesticide
+  has:
+  - tree sap
+
+you:
+  needs:
+  - tree sap
+  has:
+  - the ability to move
+
+
+
+idea:
+- if you wrong the merchant, they will come and steal everything
+  from you and you have to work on the farm to buy them all back
+
