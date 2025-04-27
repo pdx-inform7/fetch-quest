@@ -1,0 +1,26 @@
+# Ignore compiled story files
+*.ulx
+*.blb
+*.z8
+*.z5
+
+# Ignore build artifacts
+Build/
+Index/
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+
+# Ignore user-specific settings
+Settings.plist
+
+*.plist
+*.iFiction
+*.txt
+*Icon*
+*.skein
+*.blurb
+*.rtf
+*.DS_Store
