@@ -21,11 +21,6 @@ The Winding Path is east of the Glade. "You find yourself in what looks like the
 [For Section 1's Blob-State Ending - If the Player attempts to eat an unrecognizable Blob.]
 BlobState is a truth state that varies. BlobState is false.
 
-[check if BlobState is true: ]
-	[say "You begin to feel funny." ;]
-	[;say "You start feeling funny all over. You look down and see your body seem to be liquefying. You are liquefying. Like the Wicked Witch of the west, you are melting. You start to panic. You try screaming, but your vocal cords stop working mid scream. It isn't long before you lose your sense of touch. The next thing you know you are a blob, of flesh or made wax. You are not sure? You could be a lump of clay for all you known. Regardless, you are a blob. A 'lifeless' blob well something. You can not talk. You can not fell. You can not move. You can not breath. Yet you are still conscious, still aware of your surroundings. You are stuck. You are trapped. And there nothing you can do about it.";
-		end the story; in three turns from now;]
-
 [squish values modeled after beverage heat values in "Disenchantment Bay"]
 
 Squish is a kind of value. The squishes are unmarred, squished, unrecognizable.
@@ -87,8 +82,6 @@ Instead of tasting the wax effigy:
 	if the current squish is not unrecognizable: 
 		now the squish of the wax effigy is the squish after the current squish;
 		say "Oops. It's a little squished."
-		
-
 		
 [You can't eat the wax effigy if it's unrecognizable (because it wouldn't work for the spell)]
 Check eating the wax effigy:
