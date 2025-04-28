@@ -22,7 +22,7 @@ The wax effigy is a spell component.
 
 Section 2 - Down The Rising Path
 
-The Rising Path is west of the Glade.
+The Rising Path is west of the Glade. "The path meanders west over a steep hill. You can see that the hill flattens out further to the west."
 
 There is a blanket in the Rising path.
 
@@ -60,7 +60,7 @@ Report buying a thing (called the ware):
 
 Instead of asking the merchant about "wares", say "I have wares if you have coin."
 
-The farm is west of the Rising Path.
+The Farm is west of the Rising Path. "The farm is small yet diverse with different crops and animals all around. There is much work for the sole farmer. A forest sprouts up to the south."
 
 The farmer is a man in the farm.
 
@@ -99,7 +99,7 @@ A quest progress is a kind of value. The quest progresses are unstarted, started
 
 The hoe quest is initially unstarted.
 
-Instead of asking the farmer about "hoe" for the first time:
+Instead of asking the farmer about "hoe" when the hoe quest is unstarted:
 	say "'I can give you some gold to go buy it for me. Here.' He gives you some gold.";
 	now the hoe quest is started;
 	if the player does not carry the coin pouch:
@@ -109,7 +109,7 @@ Instead of asking the farmer about "hoe" for the first time:
 
 The block giving rule is not listed in the check giving it to rules.
 
-Check giving it to:
+Check giving something to the farmer:
 	if not giving the hoe to the farmer:
 		follow the block giving rule instead.
 	
@@ -117,13 +117,44 @@ Report giving the hoe to the farmer:
 	say "You give the farmer the hoe. He thanks you and gives you 20 coins. 'I really owe you one,' he says.";
 	now the hoe quest is finished;
 	now the balance of the coin pouch is the balance of the coin pouch plus 20.
+	
+Some fertilizer is a thing.
 
-The forest is  south of the farm.
+Instead of asking the farmer about "fertilizer" when the hoe quest is finished:
+	say "The farmer gives you some fertilizer. 'You've helped me out plenty. I'm happy to return the favor.'";
+	now the player carries some fertilizer.
 
-A Dragon Tree is in the forest.
+The Forest is  south of the farm. "The forest is sparse, with just enough cover to escape the hot sun. The Dragon Tree is alone in a larger clearing in the forest."
+
+A Dragon Tree is in the forest. The description of the tree is "The Dragon Tree looks like it has seen better days. Shriveled leaves hang limply from its withered branches."
+
+The Dragon Tree Spirit is a person.
+
+After examining the Dragon Tree for the first time:
+	say "A spirit emerges from the tree as you stand before it. 'Please... help...'";
+	now the Dragon Tree Spirit is in the forest.
+	
+The fertilizer quest is initially unstarted.
+	
+Instead of asking the spirit about "tree" when the fertilizer quest is unstarted:
+	say "'The tree needs food. The soil has been sapped of its nutrients. We have little to offer, but we can do our best to give you whatever you seek if you help us.'";
+	now the fertilizer quest is started.
+
+
+Check giving something to the spirit:
+	if not giving the fertilizer to the spirit:
+		follow the block giving rule instead.
+		
+Report giving the fertilizer to the spirit:
+	say "You give the spirit the fertilizer. 'Thank you. This will help the tree thrive. Is there anything I give to you?'";
+	now the fertilizer quest is finished.
 
 Some Dragon Tree sap is a spell component.
-
+	
+After asking the spirit about "sap" when the fertilizer quest is finished:
+	say "'Very well. Take some of the Dragon Tree's sap.'";
+	now the player carries the sap.
+	
 Section 3 - Down The Upstream Path
 
 The Upstream Path is north of the Glade.
@@ -144,4 +175,4 @@ Some quicksilver is a spell component.
 
 Section 6 - Fetched
 
-Every turn when the player is in the Glade: if all spell components are off-stage, say "You have consumed the spell components and are ready to cast! The place is here, the time is now. You realize that laying upon the table will complete the spell, so you step on up."; now the player is on the Stone Table; say "You feel a dark energy surge through you. You see a shadowy form floating above you. You realize that this apparition is you — or rather, your 'fetch'.[paragraph break]You can feel the contents of your stomach roiling in agony; you slowly lose consciousness."; end the story.
+[Every turn when the player is in the Glade: if all spell components are off-stage, say "You have consumed the spell components and are ready to cast! The place is here, the time is now. You realize that laying upon the table will complete the spell, so you step on up."; now the player is on the Stone Table; say "You feel a dark energy surge through you. You see a shadowy form floating above you. You realize that this apparition is you — or rather, your 'fetch'.[paragraph break]You can feel the contents of your stomach roiling in agony; you slowly lose consciousness."; end the story.]

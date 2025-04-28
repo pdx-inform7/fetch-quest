@@ -1,0 +1,97 @@
+
+
+
+
+(Thanks to DeepSeek with help selecting spell components.)
+
+Fetch Quest
+An Interactive Fiction by Bart Massey and the students of PSU Interactive Fiction Spring 2025
+Release 1 / Serial number 250428 / Inform 7 v10.1.2 / D
+
+Deepening Glade
+The forest stretches up into the hills around you. The setting sun filters through, lighting the small grassy glade in which you stand. A very small stream flows from north to south along the eastern edge. In the center of the glade, large and prominent, is a massive and ancient Stone Table.
+
+>w
+
+Rising Path
+The path meanders west over a steep hill. You can see that the hill flattens out further to the west.
+
+You can see a blanket (on which are a merchant and a hoe) here.
+
+>w
+
+Farm
+The farm is small yet diverse with different crops and animals all around. There is much work for the sole farmer. A forest sprouts up to the south.
+
+You can see a farmer here.
+
+>ask farmer about hoe
+"I can give you some gold to go buy it for me. Here." He gives you some gold.
+The farmer notices you don't have a coin pouch and gives you one.
+
+>e
+
+Rising Path
+The path meanders west over a steep hill. You can see that the hill flattens out further to the west.
+
+You can see a blanket (on which are a merchant and a hoe) here.
+
+>buy hoe
+You buy the hoe.
+
+>w
+
+Farm
+The farm is small yet diverse with different crops and animals all around. There is much work for the sole farmer. A forest sprouts up to the south.
+
+You can see a farmer here.
+
+>give hoe to farmer
+You give the farmer the hoe. He thanks you and gives you 20 coins. "I really owe you one," he says.
+
+You give the hoe to the farmer.
+
+>s
+
+Forest
+The forest is sparse, with just enough cover to escape the hot sun. The Dragon Tree is alone in a larger clearing in the forest.
+
+You can see a Dragon Tree here.
+
+>x tree
+The Dragon Tree looks like it has seen better days. Shriveled leaves hang limply from its withered branches.
+
+A spirit emerges from the tree as you stand before it. "Please... help..."
+
+>ask spirit about tree
+"The tree needs food. The soil has been sapped of its nutrients. We have little to offer, but we can do our best to give you whatever you seek if you help us."
+
+>n
+
+Farm
+The farm is small yet diverse with different crops and animals all around. There is much work for the sole farmer. A forest sprouts up to the south.
+
+You can see a farmer here.
+
+>ask farmer about fertilizer
+The farmer gives you some fertilizer. "You've helped me out plenty. I'm happy to return the favor."
+
+>s
+
+Forest
+The forest is sparse, with just enough cover to escape the hot sun. The Dragon Tree is alone in a larger clearing in the forest.
+
+You can see a Dragon Tree Spirit and a Dragon Tree here.
+
+>give the spirit fertilizer
+You give the spirit the fertilizer. "Thank you. This will help the tree thrive. Is there anything I give to you?"
+
+You give the fertilizer to the Dragon Tree Spirit.
+
+>ask the spirit about sap
+"Very well. Take some of the Dragon Tree's sap."
+
+>eat sap
+You eat the Dragon Tree sap. Not bad.
+
+>
