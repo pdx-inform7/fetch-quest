@@ -24,6 +24,104 @@ Section 2 - Down The Rising Path
 
 The Rising Path is west of the Glade.
 
+There is a blanket in the Rising path.
+
+The merchant is a man on the blanket.
+
+A ware is a kind of thing. A ware has a number called the price.
+
+The coin pouch is a thing. The coin pouch has a number called the balance. The balance of the coin pouch is usually 0.
+
+After printing the name of the coin pouch:
+	say " ([the balance of the coin pouch])".
+
+A hoe is a ware on the blanket. The price of a hoe is 40.
+
+Instead of taking a ware (called the ware):
+	say "You can't steal [the ware], the merchant is looking right at you."
+
+[Buying is a built-in action, but it's "blocked" in all scenes by default; this unblocks it globally.]
+The block buying rule is not listed in the check buying rulebook.
+
+Check buying a thing (called the thing):
+	if the thing is not a ware:
+		say "[The thing] is not for sale." instead;
+	if the player does not carry a coin pouch:
+		say "You don't even have a coin pouch." instead;
+	if the balance of the coin pouch is less than the price of the thing:
+		say "You don't have enough coins in your pouch." instead.
+
+Carry out buying a thing (called the ware):
+	now the ware is carried by the player.
+
+Report buying a thing (called the ware):
+	say "You buy [the ware].";
+	now the balance of the coin pouch is the balance of the coin pouch minus the price of the ware. 
+
+Instead of asking the merchant about "wares", say "I have wares if you have coin."
+
+The farm is west of the Rising Path.
+
+The farmer is a man in the farm.
+
+Working is an action applying to nothing. Understand "work" as working.
+
+A person can be injured.
+
+Check working:
+	if the player is not in the farm:
+		say "There is no work to do." instead;
+	if the player does not carry the coin pouch:
+		say "The farmer notices you don't have a coin pouch and gives you one.";
+		now the player carries the coin pouch;
+	if the player is injured:
+		say "You are injured and cannot work.[first time] (do something else for a few turns to heal)[only]";
+		now the time of day is 1 minute before the time of day instead;
+	if a random chance of 1 in 20 succeeds:
+		say "You injure yourself while working. You cannot continue working until you heal.";
+		now the player is injured;
+		the injury heals in 5 minutes from now instead.
+		
+At the time when the injury heals:
+	say "Your injury heals and you can work again.";
+	now the player is not injured.
+
+Carry out working:
+	now the balance of the coin pouch is the balance of the coin pouch plus one.
+
+Report working:
+	say "You work hard and earn one coin."
+	
+After examining the farmer for the first time:
+	say "'Hey there! I could use some help around the farm if you'd like to work. Of course I will pay you,' says the farmer, continuing 'By the way, you wouldn't happen to have seen a hoe, have you? Mine broke and I really need another.'"
+
+A quest progress is a kind of value. The quest progresses are unstarted, started, and finished. A quest progress is usually unstarted.
+
+The hoe quest is initially unstarted.
+
+Instead of asking the farmer about "hoe" for the first time:
+	say "'I can give you some gold to go buy it for me. Here.' He gives you some gold.";
+	now the hoe quest is started;
+	if the player does not carry the coin pouch:
+		say "The farmer notices you don't have a coin pouch and gives you one.";
+		now the player carries the coin pouch;
+	now the balance of the coin pouch is the balance of the coin pouch plus the price of the hoe.
+
+The block giving rule is not listed in the check giving it to rules.
+
+Check giving it to:
+	if not giving the hoe to the farmer:
+		follow the block giving rule instead.
+	
+Report giving the hoe to the farmer:
+	say "You give the farmer the hoe. He thanks you and gives you 20 coins. 'I really owe you one,' he says.";
+	now the hoe quest is finished;
+	now the balance of the coin pouch is the balance of the coin pouch plus 20.
+
+The forest is  south of the farm.
+
+A Dragon Tree is in the forest.
+
 Some Dragon Tree sap is a spell component.
 
 Section 3 - Down The Upstream Path
