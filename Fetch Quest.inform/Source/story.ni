@@ -1,6 +1,6 @@
 "Fetch Quest" by "Bart Massey and the students of PSU Interactive Fiction Spring 2025"
 
-When play begins, say "(Thanks to DeepSeek with help selecting spell components.)"
+When play begins, say "(Thanks to DeepSeek with help selecting spell components. Thanks also to GitHub for this demo.)"
 
 The Deepening Glade is a room. "The forest stretches up into the hills around you. The setting sun filters through, lighting the small grassy glade in which you stand. A very small [stream] flows from north to south along the eastern edge. In the center of the glade, large and prominent, is a massive and ancient [Stone Table]."
 
