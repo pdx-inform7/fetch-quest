@@ -1,0 +1,11 @@
+# ignore generated files
+Fetch Quest.inform/Build/
+Fetch Quest.inform/Index/
+Fetch Quest.inform/Metadata.iFiction
+Fetch Quest.inform/Release.blurb
+Fetch Quest.inform/Settings.plist
+Fetch Quest.inform/Skein.skein
+Fetch Quest.inform/manifest.plist
+Fetch Quest.inform/notes.rtf
+Fetch Quest.inform/uuid.txt
+Fetch Quest.materials/
