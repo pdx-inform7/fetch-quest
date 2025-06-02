@@ -4,9 +4,11 @@ Portland State Universiy CS 410/510 Interactive Fiction
 Spring 2025
 
 This mini IF demo was written as a collaborative project by
-the above-listed folks. For now,
-[install Inform 7](https://github.com/ganelson/inform/releases)
-to play.  Better play possibilities will be given shortly.
+the above-listed folks.
+
+To play the game, you can visit
+<https://pdx-inform7.github.io/fetch-quest> and either
+download a game file or play in-browser.
 
 ## License
 
